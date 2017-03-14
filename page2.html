@@ -45,10 +45,10 @@
       display: -ms-flexbox;
       display: -webkit-box;
       display: -webkit-flex;
-      flex-direction: column;
+      align-items: flex-start;
+      /*flex-flow:row wrap;*/
       /*align-items: flex-end;*/
-      flex-wrap: nowrap;/*
-      width: 100%;
+      /*  width: 100%;
       height: 100%;
       /*border: 1px solid #000;*/
     }
@@ -58,9 +58,6 @@
       height: 500px;
       background-size: cover;
     }*/
-    .inner3{
-
-    }
     /*#img2_1{
       width: 70%;
     }*/
@@ -84,6 +81,9 @@
       padding: 80px 20% 5%;
       background-color: #f7f7f7;
     }
+    .inner2{
+      
+    }
   </style>
 
 </head>
@@ -94,18 +94,31 @@
   <p class="p_body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 </div>
 <div class="outer">
-  <div class="inner1" style="width:100%;background-color: black;position: relative;">
-    <img class="img-responsive" src="images/page2_1.jpg" style="height: 100%;position: relative;" />
-    <img class="img-responsive" src="images/logo1.png"  style="position: absolute;top:40%;left:40%;"  />
+  <div class="inner1" style="background-color: black;position: relative;width:65%;">
+    <img class="img-responsive" src="images/page2_1.jpg" style="position: relative;" />
+    <img class="img-responsive" src="images/logo1.png"  style="position: absolute;top:36%;left:30%;"  />
   </div>
-  <div class="inner2">
+  <div>
+    <div class="container-fluid abc" style="background-color: black;width:35%;height: auto;">
+      <img class="img-responsive" src="images/icon3.png" style="margin: 0 auto;" />
+      <p class="p_heading text-center" style="margin-top:25px;">VINTAGE OLIVIA</p>
+      <p class="p_body text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <img id="img2_2" class="img-responsive" src="images/page2_2.jpg" style="width:5%;height: 5%;">
+  </div>
+  <!-- <div class="outer" style="background-color: green;">
     <div class="container-fluid cont-padding" style="height:50%;">
       <img class="img-responsive" src="images/icon3.png" style="margin: 0 auto;" />
       <p class="p_heading text-center" style="margin-top:25px">VINTAGE OLIVIA</p>
           <p class="p_body ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.jhkjhjkhkjhjhjkhkhjhkjhghghjghghghg Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     </div>
     <img id="img2_2" class="img-responsive" src="images/page2_2.jpg">
-  </div>
+  </div> -->
 </div>
 </body>
 </html>
