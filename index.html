@@ -7,18 +7,38 @@
   <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
   <script src="bootstrap/dist/js/jquery.min.js"></script>
   <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <style type="text/css">
  	body,html{
 	margin: 0px;
 	padding: 0px;
 	}
+  
   	nav.navbar-default{
-  		position: absolute;
-  		top: 10px;
-  		left:10px;
-  		border : none;
-  		background:transparent;
-  	}
+      position: absolute;
+      top: 0px;
+      left:0px;
+      margin-left: 27.5%;
+      width: 45%;
+      border : none;
+      background:transparent;
+      border:1px solid #000;
+    }
+    nav{
+    
+    padding-top: 20px;
+
+  }
+
+
+    #li1{padding-top: 13px;}
+    #li2{padding-top: 13px;}
+    #li3{padding-top: 13px;}
+    #li4{padding-left: 30px;padding-right: 30px;}
+    #li5{padding-top: 13px;}
+    #li6{padding-top: 13px;}
+    #li7{padding-top: 13px;}
   	
 	.abc{
 		padding-left: 0px;
@@ -27,11 +47,6 @@
 
 	div.collapse ul.nav li a{
 		font-weight: bold;	
-	}
-
-	nav{
-		padding-left: 30%;
-		padding-top: 20px;
 	}
 /*
 	@media only screen and (max-width: 1199px){
@@ -199,11 +214,17 @@ p{
         .image-w{
           width: 100%;
         }
+
+/* for navbar*/
+
+
+/*for navb*/
+
   </style>
 </head>
 <body>
 <div class="container-fluid abc">
-<img class="img-responsive" src="images/page1.png" style="position: relative;" />
+<img class="img-responsive image-w" src="images/page1.png" style="position: relative;" />
 	<nav class="navbar navbar-default">
 		<div class="navbar-header">
 	      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -214,13 +235,13 @@ p{
 	    </div>
       	<div class="collapse navbar-collapse bold-text" id="myNavbar">
 			<ul class="nav navbar-nav" >
-				<li class="active"><a href="#">ABOUT US</a></li>
-				<li style="cursor: auto;"><a>.</a></li>
-				<li><a href="#">WORK</a></li>
-				<li><img class="img-responsive" src="images/logo.png"></li>
-				<li><a href="#">SHOP</a></li>
-				<li><a>.</a></li>
-				<li><a href="#">CONTACT</a></li>		
+				<li id="li1" class="active"><a href="#">ABOUT US</a></li>
+				<li id="li2"><a>.</a></li>
+				<li id="li3"><a href="#">WORK</a></li>
+				<li id="li4"><img class="img-responsive" src="images/logo.png"></li>
+				<li id="li5"><a href="#">SHOP</a></li>
+				<li id="li6"><a>.</a></li>
+				<li id="li7"><a href="#">CONTACT</a></li>		
 			</ul>	
 		</div>
 	</nav>
@@ -258,7 +279,7 @@ p{
 			  <p class="p_heading">LA BORIOSA</p>
 			  <p class="p_body text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
 		</div>
-		<img class="img-responsive" src="images/page3_1.jpg" style="position: absolute;bottom:0px;">
+		<img class="img-responsive image-w" src="images/page3_1.jpg" style="position: absolute;bottom:0px;">
 	</div>
 	<div id="right3"  style="position: relative;">
 		<img class="img-responsive image-hw" src="images/page3_2.jpg">
@@ -281,7 +302,7 @@ p{
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.
           </p>
       </div>
-      <img class="img-responsive" src="images/page4_2.jpg" style="position: absolute;bottom:0px;">
+      <img class="img-responsive image-w" src="images/page4_2.jpg" style="position: absolute;bottom:0px;">
   </div>
 	<!-- <div class="inner2"  style="display: flex;flex-direction: column;position: relative;width: 34%;">
 		<div class="container-fluid text-center cont-padding">
@@ -293,7 +314,7 @@ p{
 		</div>
 		<img class="img-responsive" src="images/page4_2.jpg" style="position: absolute;bottom: 0;">
 	</div> -->
-	<div class="inner3" style="width: 32.4%;">
+	<div class="inner3" style="width: 33.7%;">
 		<img class="img-responsive image-hw" src="images/page4_3.jpg">
 	</div>
 </div>
