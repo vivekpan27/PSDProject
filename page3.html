@@ -10,39 +10,65 @@
 		.outer{
 			display: flex;
 		}
-		#left{
+		#left3{
 			display: flex;
 			flex-direction: column;
-			width:40%;
+			width:35%;
 			position: relative;
 		}
-		#right{
+		/*#right{
 			width: 60%;
-		}
+		}*/
 		.p_heading{
         font-size:16px;
         font-weight: bold;
       }
       .p_body{
-        font-size:14px; 
+        font-size:12px; 
         line-height:2;
         text-align: left;
       }
+      /*@media only screen and (max-width: 992px){
+      		.outer{
+      			display: block;
+      			width:100%;
+      		}
+      		#left3{
+				width:100%;
+				display: block;
+				position: relative;
+			}
+			.img-responsive{
+				width: 100%;
+			}
+			#icon2{
+				width:10%;
+			}
+
+      }*/
+      /*@media only screen and (max-width: 992px){
+      		.p_body{
+      			font-size: 8px;
+      		}
+      }*/
 	</style>
 
 </head>
 <body>
 <div class="outer">
-	<div id="left">
-		<div class="container-fluid text-center" style="padding:0px 15% 0px">
-			<img class="img-responsive" style="display:inline;padding: 50px 10px 40px;" src="images/icon2.png" />
-			  <p class="p_heading">LA BORISA</p>
-			  <p class="p_body text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived</p>
+	<div id="left3">
+		<div class="container-fluid text-center" style="padding:0px 13% 0px;">
+			<img id="icon2" class="img-responsive" style="display:inline;padding: 50px 10px 25px;" src="images/icon2.png" />
+			  <p class="p_heading">LA BORIOSA</p>
+			  <p class="p_body text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.
+			  </p>
 		</div>
 		<img class="img-responsive" src="images/page3_1.jpg" style="position: absolute;bottom:0px;">
 	</div>
-	<img class="img-responsive" src="images/page3_2.jpg" style="width: 65%;position: relative;">
-	<img class="img-responsive" src="images/logo2.png" style="position: absolute;top:35%;left:65%;">
+	<div id="right3"  style="position: relative;">
+		<img class="img-responsive" src="images/page3_2.jpg" style="height: 100%;">
+		<img class="img-responsive" src="images/logo2.png" style="position: absolute;top:37.4%;left:41.7%;width:17%;height: 25%;">
+	</div>
 </div>
 </body>
 </html>

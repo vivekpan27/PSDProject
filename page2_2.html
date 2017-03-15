@@ -1,106 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
   <script src="bootstrap/dist/js/jquery.min.js"></script>
   <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-
-<!--  <style type="text/css">
-    .outer{
-      border: 1px solid blue;
-      display: flex;
-      display: -ms-flexbox;
-      display: -webkit-box;
-      display: -webkit-flex;
-      height: 200px;
-      /*align-items: baseline;*//*baseline,stretch,center,flex-start,flex-end*/
-/*      flex-direction: column-reverse; /*row is default*/
-/*      flex-wrap: wrap;*/
-
-      /*justify-content: space-around;*/ /*flex-start,flex-end,center,space-between,space-around*/
-      align-content: center;
-    }
-    .inner{
-      height: 50px;
-      background-color: red;
-      margin: 5px;
-      text-align: center;
-      line-height: 50px;
-
-    }
-    .inner{
-      width: 50px;
-    }
-
-/*    .inner:nth-child(3){font-size: 30px;}  */ /*for align-items:baseline;*/
-  </style> -->
+  <title></title>
   <style type="text/css">
-  body{
-    margin: 0;
-    padding: 0;
-  }
-    .outer{
+    #left{
+      position: relative;
+    }
+    #logo1{
+      position: absolute;
+      top: 30%;
+      left: 50%;
+    }
+    #outer{
       display: flex;
-      display: -ms-flexbox;
-      display: -webkit-box;
-      display: -webkit-flex;
-      /*align-items: flex-end;*/
-      /*  width: 100%;
-      height: 100%;
-      /*border: 1px solid #000;*/
-    }
-    /*.inner1{
-      background-image: url("images/page2_1.jpg");
-      width: 70%;
-      height: 500px;
-      background-size: cover;
-    }*/
-    .inner3{
-
-    }
-    /*#img2_1{
-      width: 70%;
-    }*/
-    .cont-padding{
-      margin:50px;
-    }
+    } 
     .p_heading{
         font-size:16px;
         font-weight: bold;
       }
       .p_body{
-        font-size:16px; 
+        font-size:12px; 
         line-height:2;
+        text-align: left;
       }
-     .abc{
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-    #cont_page2{
+      #right{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        position: relative;
+      }
+      #page2_2{
+        position: absolute;
+        bottom: 0px;
+      }
+      #logo1{
+        width: 10%;
+        height: 17%;
+        position: absolute;
+        left: 45%;
+        top: 40%;
+      }
+      #cont_page2{
       margin:0px;
       padding: 80px 20% 5%;
       background-color: #f7f7f7;
     }
-    .inner2{
-      
-    }
   </style>
-
 </head>
 <body>
-<div class="row">
-  <div class="col-md-8"><img src="images/page2_1.jpg">
+<div id="cont_page2" class="container-fluid text-center abc">
+  <img class="img-responsive" style="display:inline;padding-bottom: 20px;" src="images/icon.png" />
+  <p class="p_heading">A NEW GENERATION OF VINTAGE BIKE</p>
+  <p class="p_body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+</div>
+<div  id="outer">
+  <div id="left" >
+      <img id="page2_1" class="img-responsive" src="images/page2_1.jpg" />
+      <img id="logo1" class="img-responsive" src="images/logo1.png" />
   </div>
-  <div class="col-md-4">
-    <div class="row">
-      <div class="col-md-12">
+  <div id="right">
+      <div class="container-fluid text-center" style="padding:0px 13% 0px">
+        <img class="img-responsive" style="display:inline;padding: 50px 10px 25px;" src="images/icon3.png" />
+        <p class="p_heading">VINTAGE OLIVIA</p>
+        <p class="p_body text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12"><img src="images/page2_2.jpg">
-      </div>
-    </div>
+      <img id="page2_2" class="img-responsive" src="images/page2_2.jpg" />
   </div>
 </div>
 </body>

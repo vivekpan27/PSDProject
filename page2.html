@@ -1,124 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
   <script src="bootstrap/dist/js/jquery.min.js"></script>
   <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-
-<!--  <style type="text/css">
-    .outer{
-      border: 1px solid blue;
-      display: flex;
-      display: -ms-flexbox;
-      display: -webkit-box;
-      display: -webkit-flex;
-      height: 200px;
-      /*align-items: baseline;*//*baseline,stretch,center,flex-start,flex-end*/
-/*      flex-direction: column-reverse; /*row is default*/
-/*      flex-wrap: wrap;*/
-
-      /*justify-content: space-around;*/ /*flex-start,flex-end,center,space-between,space-around*/
-      align-content: center;
-    }
-    .inner{
-      height: 50px;
-      background-color: red;
-      margin: 5px;
-      text-align: center;
-      line-height: 50px;
-
-    }
-    .inner{
-      width: 50px;
-    }
-
-/*    .inner:nth-child(3){font-size: 30px;}  */ /*for align-items:baseline;*/
-  </style> -->
+  <title></title>
   <style type="text/css">
-  body{
-    margin: 0;
-    padding: 0;
-  }
+    #left2{
+      position: relative;
+    }
+    #logo1{
+      position: absolute;
+      top: 30%;
+      left: 50%;
+    }
     .outer{
       display: flex;
-      display: -ms-flexbox;
-      display: -webkit-box;
-      display: -webkit-flex;
-      align-items: flex-start;
-      /*flex-flow:row wrap;*/
-      /*align-items: flex-end;*/
-      /*  width: 100%;
-      height: 100%;
-      /*border: 1px solid #000;*/
-    }
-    /*.inner1{
-      background-image: url("images/page2_1.jpg");
-      width: 70%;
-      height: 500px;
-      background-size: cover;
-    }*/
-    /*#img2_1{
-      width: 70%;
-    }*/
-    .cont-padding{
-      margin:50px;
-    }
+    } 
     .p_heading{
         font-size:16px;
         font-weight: bold;
       }
       .p_body{
-        font-size:16px; 
+        font-size:12px; 
         line-height:2;
+        text-align: left;
       }
-     .abc{
-      padding-left: 0px;
-      padding-right: 0px;
-    }
-    #cont_page2{
+      #right2{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        position: relative;
+      }
+      #page2_2{
+        position: absolute;
+        bottom: 0px;
+      }
+      #logo1{
+        width: 10%;
+        height: 17%;
+        position: absolute;
+        left: 45%;
+        top: 40%;
+      }
+      #cont_page2{
       margin:0px;
       padding: 80px 20% 5%;
       background-color: #f7f7f7;
     }
-    .inner2{
-      
-    }
   </style>
-
 </head>
 <body>
-<div id="cont_page2" class="container-fluid text-center abc">
+<div id="cont_page2" class="container-fluid text-center">
   <img class="img-responsive" style="display:inline;padding-bottom: 20px;" src="images/icon.png" />
   <p class="p_heading">A NEW GENERATION OF VINTAGE BIKE</p>
   <p class="p_body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 </div>
-<div class="outer">
-  <div class="inner1" style="background-color: black;position: relative;width:65%;">
-    <img class="img-responsive" src="images/page2_1.jpg" style="position: relative;" />
-    <img class="img-responsive" src="images/logo1.png"  style="position: absolute;top:36%;left:30%;"  />
+<div  class="outer">
+  <div id="left2" >
+      <img id="page2_1" class="img-responsive" src="images/page2_1.jpg" />
+      <img id="logo1" class="img-responsive" src="images/logo1.png" />
   </div>
-  <div>
-    <div class="container-fluid abc" style="background-color: black;width:35%;height: auto;">
-      <img class="img-responsive" src="images/icon3.png" style="margin: 0 auto;" />
-      <p class="p_heading text-center" style="margin-top:25px;">VINTAGE OLIVIA</p>
-      <p class="p_body text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <img id="img2_2" class="img-responsive" src="images/page2_2.jpg" style="width:5%;height: 5%;">
+  <div id="right2">
+      <div class="container-fluid text-center" style="padding:0px 13% 0px">
+        <img class="img-responsive" style="display:inline;padding: 50px 10px 25px;" src="images/icon3.png" />
+        <p class="p_heading">VINTAGE OLIVIA</p>
+        <p class="p_body text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
+      </div>
+      <img id="page2_2" class="img-responsive" src="images/page2_2.jpg" />
   </div>
-  <!-- <div class="outer" style="background-color: green;">
-    <div class="container-fluid cont-padding" style="height:50%;">
-      <img class="img-responsive" src="images/icon3.png" style="margin: 0 auto;" />
-      <p class="p_heading text-center" style="margin-top:25px">VINTAGE OLIVIA</p>
-          <p class="p_body ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.jhkjhjkhkjhjhjkhkhjhkjhghghjghghghg Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    </div>
-    <img id="img2_2" class="img-responsive" src="images/page2_2.jpg">
-  </div> -->
 </div>
 </body>
 </html>
