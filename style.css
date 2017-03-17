@@ -21,8 +21,7 @@ body,html{
       border:none;
     }
     .navbar-nav{
-    
-    margin: 0;
+    padding-top: 30px;
     float: none;
     width: 100%;
     text-align: center;
@@ -41,6 +40,9 @@ body,html{
   .navbar-nav li:hover {
     background: #ccc;
   }
+  .navbar-nav li:nth-child(3):hover{
+    background-color: transparent;
+  }
 
   .navbar-nav li:nth-child(1) a:after, .navbar-nav li:nth-child(4) a:after {
       content: ".";
@@ -55,23 +57,41 @@ body,html{
     position: relative;
   }
 
-  .navbar-default .navbar-nav>.active>a{
-    background-color: transparent;
+
+
+  /*.navbar-default .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>.active>a:hover {
+    background-color: #ccc;
+  }*/
+
+  
+  .navbar-default .navbar-nav>li>a:hover
+  .navbar-default .navbar-nav>li:hover{
+      background-color: #ccc;
   }
 
-
-    #li1{padding-top: 13px;}
-    #li2{padding-top: 13px;}
-    #li3{padding-top: 13px;}
-    #li4{padding-left: 30px;padding-right: 30px;}
-    #li5{padding-top: 13px;}
-    #li6{padding-top: 13px;}
-    #li7{padding-top: 13px;}
+  .navbar-nav li:nth-child(3) img{  
+    display: inline;
+  }  
+    
   	
 	.abc{
 		padding-left: 0px;
 		padding-right: 0px;
 	}
+.navbar-default .navbar-nav>.active>a{
+  background-color: #ccc;
+}
+
+.navbar-default .navbar-nav>.active{
+  background-color: #ccc;
+  color:#000;
+}
+
+
+.navbar-default .navbar-nav>.active>a:hover{
+  background-color: transparent;
+}
 
 	div.collapse ul.nav li a{
 		font-weight: bold;	
@@ -176,9 +196,7 @@ body,html{
     margin: 0 auto; /* Align slide image horizontally center */
 }
 
-li.active{
-	background-color: black;/*#a9b0b6;*/
-}
+
 blockquote {
   padding: 15px;
   text-align: center;
@@ -265,9 +283,9 @@ p{
   .cont234-padding{
     padding:0px 13% 45%;
   }
-  li.active {
-     background-color: transparent;
-  }
+  
+
+
   #input-lg{
     width: 20%;
     padding: 25px 20px;
@@ -277,7 +295,57 @@ p{
     display: inline;
   }
 
+/*navbar modal*/
+.navbar-toggle {
+  float: left !important;
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+.modal-nav-content {
+  width: 100%;
+  height: auto;
+}
+
+.modal-nav-body {
+  margin-top: 100px; 
+}
+
+.modal-nav-body ul {
+  list-style-type: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.modal-nav-body ul li {
+  text-align: center;
+  font-size: 130%;
+  padding: 8px;
+  text-transform: uppercase;
+}
+.modal-nav-body ul li:nth-child(3){
+  display: none;
+}
+.modal-nav-body ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+/*navbar modal*/
+
+
+
 /* media queries*/
+
+
+
+@media only screen and (max-width:1000px){
+    #left2{
+      width:170%;
+    }
+}
+
 @media only screen and (max-width:700px){
   .outer{
     flex-direction: column;
@@ -306,7 +374,45 @@ p{
   }
   .navbar-nav li{
     width: 100%;
-    background-color: red;
-  }  
+  }
+  .footer-padding{
+      display: inline-block;
+      text-align: center;
+  }
+
+  #contact>div{
+    display: inline-block;
+      text-align: center;
+  }
+
+  .banner{
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width:767px){
+  .banner{
+    height: 800px;
+  }
+    .navbar-nav li:nth-child(1) a:after, .navbar-nav li:nth-child(4) a:after,.navbar-nav li:nth-child(3) {
+     display: none;
+  }
+  .navbar-nav li{
+    border:1px solid #000;
+    width: 100%;
+    background-color: #ccd;
+  }
+}
+
+@media only screen and (max-width:480px){
+  .banner{
+    height: 800px;
+  }
+}
+
+@media only screen and (max-width:320px){
+  .banner{
+    height: 480px;
+  }
 }
 
