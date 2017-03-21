@@ -50,7 +50,8 @@ nav.navbar-default{
   background-color: transparent;
 }
 
-.navbar-nav li:nth-child(1) a:after, .navbar-nav li:nth-child(4) a:after {
+.navbar-nav li:nth-child(1) a:after,
+.navbar-nav li:nth-child(4) a:after {
   content: ".";
   position: absolute;
   bottom: 0;
@@ -58,7 +59,7 @@ nav.navbar-default{
 }
 
 .navbar-nav li a {
-  padding: 0 20px;
+  padding: 0 40px;
   position: relative;
 }
 
@@ -134,6 +135,9 @@ hr {
 
 .outer{
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
 }
 
 .title{
@@ -151,7 +155,13 @@ hr {
 
 #right2{
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   width: 41%;
   position: relative;
 }
@@ -224,7 +234,13 @@ hr {
     
 #left3{
 	display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
 	flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
 	width:38%;
 	position: relative;
 }
@@ -240,7 +256,13 @@ hr {
 
 #mid4{
   display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
   flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   width: 34%;
   position: relative;
 }
@@ -253,7 +275,7 @@ hr {
   background: #f8f8f8;
 }
 .carousel .item img{
-  margin: 0 auto; /* Align slide image horizontally center */
+  margin: 0 auto; 
 }
 blockquote {
   padding: 15px;
@@ -297,6 +319,7 @@ p{
   background-color: transparent;
   border-color: grey;
   font-size: 17px;
+  color: #fff;
   /*font-weight: 400;*/
 }
 
@@ -322,6 +345,7 @@ p{
 
 #footer{
   margin-top: 90px;
+  background-color: #f7f7f7; 
 }
 
 .padding2{
@@ -367,6 +391,9 @@ p{
   
 .overlay{
   transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -378,6 +405,9 @@ p{
 
 .img-overlay:hover .overlay{
   transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
   opacity: .9;
   background-color: #74e2a2;
 }
@@ -480,18 +510,60 @@ p{
   #right2 img{
     height: 25%;
   }
-    
+  
   .cont234-padding{
     padding:0px 0% 35%;
   }
   .p_body{
     padding: 0 10%;
   }
+
+  #page6 div div div div img,
+  #page6 div img{
+    margin:20px auto;
+  }
+
+  #contact div{
+    display: block;
+    width:100%;
+    height: auto;
+    margin:0;
+  }
+
+  #contact>div{
+    text-align: center;
+  }
+
+  #page6{
+  background-color: #05040a;;
+  background-image: url("images/tileable-wood-colored.png");
+  }
 }
+
+@media only screen and (max-width:767px){
+  .banner{
+    height: 800px;
+  }
+  
+  .navbar-nav li:nth-child(1) a:after,
+  .navbar-nav li:nth-child(4) a:after,
+  .navbar-nav li:nth-child(3){
+     display: none;
+  }
+  .navbar-nav li{
+    border:1px solid #000;
+    width: 100%;
+    background-color: #ccd;
+  }
+}
+
 
 @media only screen and (max-width:700px){
   .outer{
     flex-direction: column;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
   }
   #left2,
   #right2,
@@ -513,7 +585,8 @@ p{
     font-size: 10px;
   }
   .navbar-nav li:nth-child(1) a:after,
-  .navbar-nav li:nth-child(4) a:after,.navbar-nav li:nth-child(3) {
+  .navbar-nav li:nth-child(4) a:after,
+  .navbar-nav li:nth-child(3) {
      display: none;
   }
   .navbar-nav li{
@@ -524,31 +597,19 @@ p{
     text-align: center;
   }
 
-  #contact>div{
-    display: inline-block;
+  /*#contact{
     text-align: center;
   }
+
+  #contact>div{
+    display: inline;
+  }*/
 
   .banner{
     height: 600px;
   }
 }
 
-@media only screen and (max-width:767px){
-  .banner{
-    height: 800px;
-  }
-  
-  .navbar-nav li:nth-child(1) a:after,
-  .navbar-nav li:nth-child(4) a:after,.navbar-nav li:nth-child(3){
-     display: none;
-  }
-  .navbar-nav li{
-    border:1px solid #000;
-    width: 100%;
-    background-color: #ccd;
-  }
-}
 
 @media only screen and (max-width:480px){
   .banner{
@@ -562,3 +623,10 @@ p{
   }
 }
 
+.grid{
+  max-width:1200px;
+}
+.grid-sizer,
+.grid-item { float: left;width: 16.67%;}
+/* 2 columns wide */
+.grid-item--width2 { width: 33.33%;}

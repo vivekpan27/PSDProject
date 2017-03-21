@@ -11,80 +11,20 @@
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style2.css">
-  <link rel="stylesheet" href="animate.css">
-  <!-- <link rel="stylesheet" href="aos/dist/aos.css" />
-  <script src="aos/dist/aos.js"></script> -->
-<!-- <style type="text/css">
+  <link rel="stylesheet" href="aos/dist/aos.css" />
+  <script src="aos/dist/aos.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
 
-  #page6 div div:nth-child(3)>img{
-    -webkit-animation-name: spinner;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-duration: 6s;
-
-    animation-name: spinner;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-duration: 6s;
-
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  }
-
-  #page6 div div:nth-child(3)>img:hover {
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-  }
-
-  #page6 div div:nth-child(3)>img{
-    -webkit-perspective: 500px;
-    -moz-perspective: 500px;
-    -ms-perspective: 500px;
-    perspective: 500px;
-
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-  }
-
-   /* WebKit and Opera browsers */
-  @-webkit-keyframes spinner {
-    from { -webkit-transform: rotateZ(0deg); }
-    to   { -webkit-transform: rotateZ(-360deg); }
-  }
-
-  /* all other browsers */
-  @keyframes spinner {
-    from {
-      -moz-transform: rotateY(0deg);
-      -ms-transform: rotateY(0deg);
-      transform: rotateY(0deg);
-    }
-    to {
-      -moz-transform: rotateY(-360deg);
-      -ms-transform: rotateY(-360deg);
-      transform: rotateY(-360deg);
-    }
-  }
-
-</style> -->
 
 </head>
 <body>
 
-<!-- <script>
+<script>
     AOS.init({
-      offset: 50,
-      duration: 3000
+      offset: 200,
+      duration: 2000
     });
-</script> -->
-<script src="js/wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
+</script>
 <div class="banner">
   <div class="container">
 	  <nav class="navbar navbar-default"  data-aos="flip-up">
@@ -243,91 +183,17 @@
 
 <!--page 6-->
 <div id="page6">
-<div class="row abc">
-  <div class="col-md-4 abc">
-    <div class="row abc">
-      <div class="col-md-6 abc img-overlay">
-        <img class="img-responsive" src="images/page5_1.jpg">
-        <div class="overlay">
-        </div>
-      </div>
-      <div class="col-md-6 abc img-overlay">
-        <img class="img-responsive" src="images/page5_2.jpg">
-        <div class="overlay">
-        </div>
-      </div>
-    </div>        
-    <div class="row abc text-center">
-      <div class="col-md-12 abc img-overlay">
-        <img class="img-responsive" src="images/page5_3.jpg">
-        <div class="overlay">
-        </div>
-      </div>
-    </div>    
+  <div class="grid js-masonry" data-masonry='{ "itemSelector": ".grid-item" , "columnWidth": ".grid-sizer","percentPosition": "true" }'>
+    <div class="grid-sizer"></div>
+    <div class="grid-item"><img  src="images/page5_1.jpg"></div>
+    <div class="grid-item"><img  src="images/page5_2.jpg"></div>
+    <div class="grid-item"><img  src="images/page5_4.jpg"></div>
+    <div class="grid-item"><img  src="images/page5_5.jpg"></div>
+    <div class="grid-item grid-item--width2"><img src="images/page5_6.jpg"></div>
+    <div class="grid-item grid-item--width2"><img src="images/page5_3.jpg"></div>
+    <div class="grid-item"><img  src="images/page5_7.jpg"></div>
+    <div class="grid-item"><img  src="images/page5_8.jpg"></div>
   </div>
-  <div class="col-md-2 abc img-overlay">
-    <img class="img-responsive" src="images/page5_4.jpg">
-    <div class="overlay">
-    </div>
-  </div>
-  <div class="col-md-2 abc img-overlay" >
-    <img class="img-responsive" src="images/page5_5.jpg" >
-    <div class="overlay">
-    </div>
-  </div>
-  <div class="col-md-4 abc">
-    <div>
-      <div class="row abc">
-        <div class="col-md-12 abc img-overlay">
-          <img class="img-responsive" src="images/page5_6.jpg">
-          <div class="overlay">
-          </div>
-        </div>
-      </div>    
-      <div class="row abc">
-        <div class="col-md-6 abc img-overlay">
-          <img class="img-responsive" src="images/page5_7.jpg">
-          <div class="overlay">
-          </div>
-        </div>
-        <div class="col-md-6 abc img-overlay">
-          <img class="img-responsive" src="images/page5_8.jpg">
-          <div class="overlay">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<div id="button-cont">
-	<button id="btn1" class="btn btn-lg btn-primary">DISCOVER THE SHOP</button>
-</div>
-<div id="slogan" class="text-center">
-  <img class="img-responsive" src="images/logo.png" />
-  <span>Stay on the saddle!</span>
-  <div class="form-group text">
-  	<input class="form-control input-lg" id="input-lg" type="text"  placeholder="enter your email..." />
-  	<button class="btn btn-lg btn-primary" id="btn2">GO</button>
-  </div>
-</div>
-<div id="footer" class="container-fluid">
-	<div id="contact" class="row" >
-		<div class="col-sm-4 padding1">
-			<span id="addr_head">AOD New York</span><br/>
-			<span id="addr_body">2250 Lexington Avenue<br />
-			New York,NY 10035 - info@domain.com</span>
-		</div>
-		<div class="col-sm-4 footer-padding">
-			<a href="https://www.twitter.com" target="_blank"><img class="img-responsive" src="images/6_1.png"></a>
-			<a href="https://www.facebook.com" target="_blank"><img class="img-responsive" src="images/6_2.png"></a>
-			<a href="https://www.pinterest.com" target="_blank"><img class="img-responsive" src="images/6_3.png"></a>
-		</div>
-		<div class="col-sm-4 footer-padding padding2">
-			Handcrafted by
-			<img class="img-responsive" src="images/6_4.png">
-		</div>
-	</div>
 </div>
 <!---->
 <script type="text/javascript">
