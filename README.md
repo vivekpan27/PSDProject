@@ -1,3 +1,3 @@
 # PSDProject
 
-index6.html is the current main page of the project.
+index8.html is the current main page of the project.
