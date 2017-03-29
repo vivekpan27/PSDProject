@@ -17,7 +17,7 @@ body,html{
   padding-left: 20px;
   left: 0;
   background-color: #fff;
-  box-shadow: 4px 5px 18px rgba(0,0,0,0.4)
+  box-shadow: 4px 5px 18px rgba(0,0,0,0.4);
 }
 
 nav.navbar-default{
@@ -752,9 +752,8 @@ p{
   }
 
   .navbar-toggle{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 0px;
+    margin-top: 28px;
+    margin-bottom: 28px;
   }
 
   .navbar-bottom{
@@ -776,8 +775,20 @@ p{
     color: #fff;
     background-color: transparent;
   }
-  .navbar-header{
+  
+  .navbar-header {
     background-color: #fff;
+    position: fixed;
+    width: 100%;
+    box-shadow: 4px 5px 18px rgba(0,0,0,0.4);
+  }
+  ul.navbar-nav{
+    position: absolute;
+    margin-top: 90px;
+    top:90px;
+  }
+  .navbar-nav .fixed{
+    position: relative;
   }
 
   #left2,
