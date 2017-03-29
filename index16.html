@@ -14,21 +14,26 @@
   <script src="https://unpkg.com/packery@2/dist/packery.pkgd.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-  <link rel="stylesheet" href="assets/css/style8.css">
+  <link rel="stylesheet" href="assets/css/style11.css">
   <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 </head>
-<body>
+
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="0">
 
 <script src="assets/scripts/js/wow.min.js"></script>
               <script>
               new WOW().init();
               </script>
 <div class="banner">
-  
-    <nav class="navbar navbar-default" data-wow-duration="2s">
+    <nav class="navbar navbar-default" data-wow-duration="2s" data-spy="affix" data-offset-top="0">
       <div class="navbar-header">
           <a class="navbar-brand" href="#">
             <img src="assets/images/logo.png">
+             <span>Yebo Bicycles</span>
           </a>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
@@ -38,15 +43,15 @@
       </div>
       <div class="collapse navbar-collapse bold-text" id="myNavbar">
         <ul class="nav navbar-nav" >
-          <li><a href="#">ABOUT US</a></li>
-          <li><a href="#">WORK</a></li>
+          <li><a href="#cont_page2">ABOUT US</a></li>
+          <li><a href="#left2">WORK</a></li>
           <li><img class="img-responsive" src="assets/images/logo.png"></li>
-          <li><a href="#">SHOP</a></li>
+          <li><a href="#shop">SHOP</a></li>
           <li><a href="#contact">CONTACT</a></li>   
         </ul> 
       </div>
     </nav>
-  
+  </div>
 </div>
 
 <!--page 2-->
@@ -169,15 +174,104 @@
 <!---->
 
 <!--page 6-->
-<div class="grid"  data-packery='{ "itemSelector": ".grid-item", "columnWidth": 225 }'>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item grid-item--width3"></div>
-  <div class="grid-item  grid-item--width3"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
+<div id="container">
+  <div class="grid-sizer"></div>
+  <div class="grid-item">
+      <img src="assets/images/cycle1.jpg" class="image">
+      <a class="overlay" href="#">
+        <h3 class="title">Some title</h3>
+        <div class="description">
+          <p>
+            Lorem ipsum dolor sit amet, <br>
+            consectetur adipisicing elit.
+          </p>
+        </div>
+      </a>
+  </div>
+  <div class="grid-item">
+      <img src="assets/images/cycle2.jpg" class="image">
+      <a class="overlay" href="#">
+        <h3 class="title">Some title</h3>
+        <div class="description">
+          <p>
+            Lorem ipsum dolor sit amet, <br>
+            consectetur adipisicing elit.
+          </p>
+        </div>
+      </a>
+  </div>
+  <div class="grid-item">
+      <img src="assets/images/cycle3.jpg" class="image">
+      <a class="overlay" href="#">
+        <h3 class="title">Some title</h3>
+        <div class="description">
+          <p>
+            Lorem ipsum dolor sit amet, <br>
+            consectetur adipisicing elit.
+          </p>
+        </div>
+      </a>
+  </div>
+  <div class="grid-item">
+      <img src="assets/images/cycle4.jpg" class="image">
+      <a class="overlay" href="#">
+        <h3 class="title">Some title</h3>
+        <div class="description">
+          <p>
+            Lorem ipsum dolor sit amet, <br>
+            consectetur adipisicing elit.
+          </p>
+        </div>
+      </a>
+  </div>
+  <div class="grid-item">
+      <img src="assets/images/cycle5.jpg" class="image">
+      <a class="overlay" href="#">
+        <h3 class="title">Some title</h3>
+        <div class="description">
+          <p>
+            Lorem ipsum dolor sit amet, <br>
+            consectetur adipisicing elit.
+          </p>
+        </div>
+      </a>
+  </div>
+  <div class="grid-item">
+      <img src="assets/images/cycle6.jpg" class="image">
+      <a class="overlay" href="#">
+        <h3 class="title">Some title</h3>
+        <div class="description">
+          <p>
+            Lorem ipsum dolor sit amet, <br>
+            consectetur adipisicing elit.
+          </p>
+        </div>
+      </a>
+  </div>
+  <div class="grid-item">
+      <img src="assets/images/cycle7.jpg" class="image">
+      <a class="overlay" href="#">
+        <h3 class="title">Some title</h3>
+        <div class="description">
+          <p>
+            Lorem ipsum dolor sit amet, <br>
+            consectetur adipisicing elit.
+          </p>
+        </div>
+      </a>
+  </div>
+  <div class="grid-item">
+      <img src="assets/images/cycle8.jpg" class="image">
+      <a class="overlay" href="#">
+        <h3 class="title">Some title</h3>
+        <div class="description">
+          <p>
+            Lorem ipsum dolor sit amet, <br>
+            consectetur adipisicing elit.
+          </p>
+        </div>
+      </a>
+  </div>
 </div>
 
 <div id="button-cont">
@@ -218,5 +312,8 @@
     }
 }); 
 </script>
-</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="assets/scripts/js/masonry.js"></script>
+  <script src="assets/scripts/js/main.js"></script>
+  </body>
 </html>
