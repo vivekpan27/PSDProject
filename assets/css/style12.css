@@ -20,6 +20,15 @@ html {
   left: 0;
   background-color: #fff;
   box-shadow: 4px 5px 18px rgba(0,0,0,0.4);
+  animation-name: navbarAnimation;
+  animation-duration: 1s;
+
+}
+
+@keyframes navbarAnimation{
+  0%{visibility: hidden;}
+  50%{visibility: visible;top:-45px;padding-left: -15px;}
+  100%{top:-30px;padding-left: -10px;}
 }
 
 nav.navbar-default{
@@ -49,6 +58,7 @@ nav.navbar-default{
 }
 
 .navbar-nav li {
+  transition: .5s ease-in-out;
   display: inline-block;
   float: none;
   position: relative;
@@ -61,7 +71,9 @@ nav.navbar-default{
 }
 
 .navbar-nav li:hover {
-  background: #ccc;
+  background-color: #e8e8e8;
+  color: white;
+  padding: 10px 0px;
 }
 
 .navbar-nav li:nth-child(3):hover{
@@ -437,9 +449,9 @@ p{
   padding-bottom: 80px;
 }
 
-#btn1{
+/*#btn1{
   width:20%;
-  height:5%;
+  height:50px;
   border-radius: 0px;
   padding: 15px 50px;
   width: auto;
@@ -447,7 +459,33 @@ p{
   border-color: grey;
   font-size: 17px;
   color: #fff;
-  /*font-weight: 400;*/
+}*/
+#btn1 {
+  width:25%;
+  height:50px;
+  padding: 15px 40px;
+  border: 0 solid;
+  background-color: transparent;
+  border-color: grey;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #fff;  
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#btn1:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(128, 128, 128, 0.5), 0 0 20px rgba(128, 128, 128, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388;
 }
 
 #btn2{

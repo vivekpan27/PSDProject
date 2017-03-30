@@ -43,7 +43,12 @@ html {
 .overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(101,182,145,0.9);
+    background-image: url('../../assets/images/page7_1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: flipInY; /*pulse*/
+    animation-duration: 1s;
     position: absolute;
     top: 0;
     left: 0;
@@ -51,6 +56,7 @@ html {
     color: #fff;
     display: none;
 }
+
 
 .overlay .title {
     text-align: center;
@@ -69,7 +75,10 @@ html {
 .overlay .description p {
     margin: 20px;
 }
-
+.grid-item:hover{
+  animation-name: pulse; /*pulse*/
+  animation-duration: .8s;
+}
 .grid-item:hover .overlay {
     display: block;
 }
